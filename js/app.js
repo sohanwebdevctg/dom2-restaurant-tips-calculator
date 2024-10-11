@@ -32,5 +32,15 @@ const decBtn = () => {
 
 
 
-
 // get calculated function
+const calculateBtn = () => {
+
+  // totalBillValue
+  let totalBill = document.getElementById('totalBill').value;
+  let totalBillValue = Number(totalBill);
+  // tipsValue
+  let tips = document.getElementById('tips').value;
+  let tipsValue = Number(tips);
+
+  
+}
