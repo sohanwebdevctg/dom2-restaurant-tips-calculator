@@ -22,7 +22,7 @@
         <label class="label">
           <span class="label-text text-white text-sm sm:text-sm md:text-sm lg:text-base">Total Bill</span>
         </label>
-        <input id="totalBill" type="text" placeholder="enter your amount" class="input input-sm xl:input-md input-bordered rounded-3xl"/>
+        <input id="totalBillData" type="text" placeholder="enter your amount" class="input input-sm xl:input-md input-bordered rounded-3xl"/>
       </div>
       <!-- total bill end -->
       <!-- tips start -->
@@ -30,7 +30,7 @@
         <label class="label">
           <span class="label-text text-white text-sm sm:text-sm md:text-sm lg:text-base">Tips %</span>
         </label>
-        <input id="tips" type="text" placeholder="enter your tips" class="input input-sm xl:input-md input-bordered rounded-3xl"/>
+        <input id="tipsData" type="text" placeholder="enter your tips" class="input input-sm xl:input-md input-bordered rounded-3xl"/>
       </div>
       <!-- tips end -->
       <!-- button start -->
@@ -48,27 +48,27 @@
     </div>
     <!-- user info section end -->
     <!-- summary section start -->
-     <div class="bg-red-500 w-full sm:w-2/3 md:w-2/3 lg:w-1/2 p-5 rounded-md hidden">
+     <div class="bg-red-500 w-full sm:w-2/3 md:w-2/3 lg:w-1/2 p-5 rounded-md">
       <h2 class="text-lg sm:text-lg text-black font-bold mb-2">Summary</h2>
       <ul>
         <li class="flex justify-between items-center">
           <p class="text-white text-sm xl:text-base">Total Bill</p>
-          <p class="text-sm xl:text-base font-bold">$ <span>110</span></p>
+          <p class="text-sm xl:text-base font-bold">$ <span id="totalBill">00</span></p>
         </li>
         <li class="flex justify-between items-center">
           <p class="text-white text-sm xl:text-base">Tips Amount</p>
-          <p class="text-sm xl:text-base font-bold">$ <span>10</span></p>
+          <p class="text-sm xl:text-base font-bold">$ <span id="tips">00</span></p>
         </li>
         <li class="flex justify-between items-center">
           <p class="text-white text-sm xl:text-base">Tax 5%</p>
-          <p class="text-sm xl:text-base font-bold">$ <span>10</span></p>
+          <p class="text-sm xl:text-base font-bold">$ <span id="tax">00</span></p>
         </li>
         <li class="my-2">
           <hr class="border-dotted border-gray-700">
         </li>
         <li class="flex justify-between items-center">
           <p class="text-white text-sm xl:text-base">Total Per Person</p>
-          <p class="text-sm xl:text-base font-bold">$ <span>1000</span></p>
+          <p class="text-sm xl:text-base font-bold">$ <span id="total">00</span></p>
         </li>
       </ul>
      </div>
