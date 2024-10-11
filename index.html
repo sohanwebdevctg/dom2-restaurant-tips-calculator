@@ -9,38 +9,70 @@
   <title>Restaurant tips Calculator</title>
 </head>
 <body class="bg-black bg-opacity-70">
-  <main class="container mx-auto h-screen flex flex-col justify-center items-center gap-2">
+  <main class="container mx-auto h-screen flex flex-col justify-center items-center gap-2 px-5 py-5">
     <!-- title section start -->
-     <div class="bg-green-500 w-1/2 text-center py-4">
-      <h1 class="xl:text-2xl text-white font-bold">Restaurant Tips</h1>
+     <div class="bg-green-500 w-full sm:w-2/3 md:w-2/3 lg:w-1/2 text-center py-2 sm:py-2 rounded-md">
+      <h1 class="text-xl xl:text-2xl text-white font-bold">Restaurant Tips</h1>
      </div>
     <!-- title section end -->
     <!-- user info section start -->
-    <div class="bg-zinc-800 w-1/2 p-5">
+    <div class="bg-zinc-800 w-full sm:w-2/3 md:w-2/3 lg:w-1/2 p-5 rounded-md">
+      <!-- total bill start -->
       <div class="form-control">
         <label class="label">
-          <span class="label-text text-white text-xl">Total Bill</span>
+          <span class="label-text text-white text-sm sm:text-xl">Total Bill</span>
         </label>
         <input type="text" placeholder="enter your amount" class="input input-bordered rounded-3xl"/>
       </div>
+      <!-- total bill end -->
+      <!-- tips start -->
       <div class="form-control">
         <label class="label">
-          <span class="label-text text-white text-xl">Tips %</span>
+          <span class="label-text text-white text-sm sm:text-xl">Tips %</span>
         </label>
         <input type="text" placeholder="enter your tips" class="input input-bordered rounded-3xl"/>
       </div>
+      <!-- tips end -->
+      <!-- button start -->
       <ul class="flex justify-between items-center mt-5">
         <li class="flex items-center gap-2">
-          <button class="text-white bg-red-500 w-9 h-9 text-xl rounded-full">-</button>
-          <span class="text-white text-xl">1</span>
-          <button class="text-white bg-green-500 w-9 h-9 text-xl rounded-full">+</button>
+          <button class="text-white bg-red-500 w-7 h-7 sm:w-9 sm:h-9 text-sm sm:text-xl rounded-full flex justify-center items-center">-</button>
+          <span class="text-white text-lg sm:text-xl">1</span>
+          <button class="text-white bg-green-500 w-7 h-7 sm:w-9 sm:h-9 text-sm sm:text-xl rounded-full flex justify-center items-center">+</button>
         </li>
         <li>
-          <button class="text-white bg-red-500 px-5 py-2 rounded-3xl text-base font-bold">Calculate</button>
+          <button class="text-white bg-red-500 px-3 xl:px-5 py-2 rounded-3xl text-xs sm:text-base font-bold">Calculate</button>
         </li>
       </ul>
+      <!-- button end -->
     </div>
     <!-- user info section end -->
+    <!-- summary section start -->
+     <div class="bg-red-500 w-full sm:w-2/3 md:w-2/3 lg:w-1/2 p-5 rounded-md">
+      <h2 class="text-xl text-black font-bold mb-2">Summary</h2>
+      <ul>
+        <li class="flex justify-between items-center">
+          <p class="text-white text-sm xl:text-base">Total Bill</p>
+          <p class="text-sm xl:text-base font-bold">$ <span>110</span></p>
+        </li>
+        <li class="flex justify-between items-center">
+          <p class="text-white text-sm xl:text-base">Tips Amount</p>
+          <p class="text-sm xl:text-base font-bold">$ <span>10</span></p>
+        </li>
+        <li class="flex justify-between items-center">
+          <p class="text-white text-sm xl:text-base">Tax 5%</p>
+          <p class="text-sm xl:text-base font-bold">$ <span>10</span></p>
+        </li>
+        <li class="my-2">
+          <hr class="border-dotted border-gray-700">
+        </li>
+        <li class="flex justify-between items-center">
+          <p class="text-white text-sm xl:text-base">Total Per Person</p>
+          <p class="text-sm xl:text-base font-bold">$ <span>1000</span></p>
+        </li>
+      </ul>
+     </div>
+    <!-- summary section end -->
   </main>
 
 
